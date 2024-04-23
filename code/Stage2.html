@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>PORTFOLIO Théo Gudin</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Bootstrap Icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic" rel="stylesheet" type="text/css" />
+        <!-- SimpleLightbox plugin CSS-->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Masthead-->
+        <header class="masthead">
+            <div class="container px-4 px-lg-5 h-100">
+                <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
+                    <div class="col-lg-8 align-self-end">
+                        <h1 class="text-white font-weight-bold">Stage pour l'association Serre Vivante</h1>
+                        <hr class="divider" />
+                    </div>
+                    <div class="col-lg-8 align-self-baseline">
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Services-->
+        <section class="page-section" id="stage">
+            <div class="container px-4 px-lg-5">
+                <h2 class="text-center mt-0">Qu'est-ce que j'ai fait ?</h2>
+                <hr class="divider" />
+                <div class="row gx-4 gx-lg-5 ">
+                    <div>
+                        <div class="mt-5">
+                            <p class="text-muted mb-0">Lors de ce stage, j'ai du récupérer le code qui avait été fait sous symfony 3 et éffectué une migration vers symfony 7.
+                                Le code avait été  sauvegarder dans une machine virtuel avec des dockers. 
+                            </p>
+                            <br>
+                            <p class="text-muted mb-0">L'application a été développé avec symfony 3 qui n'est plus d'actualité
+                                désormais car nous utilisons symfony 7. J'ai donc d'abord commencé à comprendre tous les
+                                éléments de symfony 3 (comme silex qui n'est plus utile sur symfony 7), twig pour les templates,
+                                doctrine, pour comprendre comment fonctionne symfony. Notre plus gros problème est la gestion
+                                du pare-feu qui bloque tous les téléchargement, l'installation de symfony etc.
+                                Ensuite j'ai mise en place de la base de donnée et configuration d'un tunnel SSH pour voir les dockers et le
+                                contenu sauvegardé du projet cartes vertes qui est le projet sur lequel je dois faire la migrations vers symfony 7.
+                                Le code que nous allons réutiliser et modifier est sauvegardée dans la base de donnée, 
+                                dans des conteneurs (docker) ce qui permet de sécuriser le codes en cas de problème de l'application.
+                                J'ai donc compris comment fonctionnait un conteneur et comment le code et réparti dans les différent conteneur ce qui m'a permit d'effectué une migrations plus faciles 
+                                car je savais a quoi correspondait les elément de symfony 3 dans le 7.
+                                J'ai en amont, créé un petite page pour comprendre comment afficher des données, comment modifier,agencer une page en symfony.
+                            </p>
+                            <br>
+                            <p class="text-muted mb-0"> Une fois lancé j'ai donc appris a faire des routes pour lier les différentes pages de l'application entre elle, j'ai ensuite fait des formulaires avec les informations de la base de données. 
+                                Et pour finir n'ayant pas le temps de tous faire, j'ai fait une documentation pour permettre a chef de l'association de continuer le projet pour un futur développeur venant en stage.</p>
+                        </div>
+                    </div>
+                </div>
+                <h2 class="text-center mt-0">remettre un bouton pour revenir en arriere</h2>
+            </div>
+        </section>
+    
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- SimpleLightbox plugin JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <!-- * *                               SB Forms JS                               * *-->
+        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    </body>
+</html>
