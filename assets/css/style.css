@@ -18,12 +18,12 @@ body {
 }
 
 a {
-  color: #149ddd;
+  color: #ac6100;
   text-decoration: none;
 }
 
 a:hover {
-  color: #37b3ed;
+  color: #ac6100;
   text-decoration: none;
 }
 
@@ -46,7 +46,7 @@ h6 {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: #149ddd;
+  background: #ac6100;
   width: 40px;
   height: 40px;
   border-radius: 50px;
@@ -60,7 +60,7 @@ h6 {
 }
 
 .back-to-top:hover {
-  background: #2eafec;
+  background: #ac6100;
   color: #fff;
 }
 
@@ -82,7 +82,7 @@ h6 {
   z-index: 9997;
   transition: all 0.5s;
   padding: 0 15px;
-  background: #040b14;
+  background: #ac6100;
   overflow-y: auto;
 }
 
@@ -90,7 +90,7 @@ h6 {
   margin: 15px auto;
   display: block;
   width: 120px;
-  border: 8px solid #2c2f3f;
+  border: 8px solid #ac6100;
 }
 
 #header .profile h1 {
@@ -105,15 +105,15 @@ h6 {
 
 #header .profile h1 a,
 #header .profile h1 a:hover {
-  color: #fff;
+  color: #000000;
   text-decoration: none;
 }
 
 #header .profile .social-links a {
   font-size: 18px;
   display: inline-block;
-  background: #212431;
-  color: #fff;
+  background: #ac6100;
+  color: #000000;
   line-height: 1;
   padding: 8px 0;
   margin-right: 4px;
@@ -125,7 +125,7 @@ h6 {
 }
 
 #header .profile .social-links a:hover {
-  background: #149ddd;
+  background: #ac6100;
   color: #fff;
   text-decoration: none;
 }
@@ -179,7 +179,7 @@ h6 {
 .nav-menu a:focus {
   display: flex;
   align-items: center;
-  color: #a8a9b4;
+  color: #000000;
   padding: 12px 15px;
   margin-bottom: 8px;
   transition: 0.3s;
@@ -190,7 +190,7 @@ h6 {
 .nav-menu a:focus i {
   font-size: 24px;
   padding-right: 8px;
-  color: #6f7180;
+  color: #000000;
 }
 
 .nav-menu a:hover,
@@ -205,7 +205,7 @@ h6 {
 .nav-menu .active i,
 .nav-menu .active:focus i,
 .nav-menu li:hover>a i {
-  color: #149ddd;
+  color: #ffffff;
 }
 
 /* Mobile Navigation */
@@ -218,7 +218,7 @@ h6 {
   font-size: 24px;
   transition: all 0.4s;
   outline: none !important;
-  background-color: #149ddd;
+  background-color: #ac6100;
   color: #fff;
   width: 40px;
   height: 40px;
@@ -244,7 +244,7 @@ h6 {
 #hero {
   width: 100%;
   height: 100vh;
-  background-color: #33E0FF;
+  background-color: #ac6100;
   background-size: cover;
 }
 
@@ -257,7 +257,7 @@ h6 {
 
 #hero:before {
   content: "";
-  background: rgba(5, 13, 24, 0.3);
+  background: #000000;
   position: absolute;
   bottom: 0;
   top: 0;
@@ -331,7 +331,7 @@ section {
   margin-bottom: 20px;
   padding-bottom: 20px;
   position: relative;
-  color: #173b6c;
+  color: #000000;
 }
 
 .section-title h2::after {
@@ -340,7 +340,7 @@ section {
   display: block;
   width: 50px;
   height: 3px;
-  background: #149ddd;
+  background: #ac6100;
   bottom: 0;
   left: 0;
 }
@@ -360,7 +360,7 @@ section {
 .about .content h3 {
   font-weight: 700;
   font-size: 26px;
-  color: #173b6c;
+  color: #ac6100;
 }
 
 .about .content ul {
@@ -381,7 +381,7 @@ section {
 .about .content ul i {
   font-size: 16px;
   margin-right: 5px;
-  color: #149ddd;
+  color: #ac6100;
   line-height: 0;
 }
 
@@ -404,7 +404,7 @@ section {
 .facts .count-box i {
   display: block;
   font-size: 44px;
-  color: #149ddd;
+  color: #ac6100;
   float: left;
   line-height: 0;
 }
@@ -423,21 +423,21 @@ section {
   margin: 0 0 0 60px;
   font-family: "Raleway", sans-serif;
   font-size: 14px;
-  color: #122f57;
+  color: #ac6100;
 }
 
 .facts .count-box a {
   font-weight: 600;
   display: block;
   margin-top: 20px;
-  color: #122f57;
+  color: #ac6100;
   font-size: 15px;
   font-family: "Poppins", sans-serif;
   transition: ease-in-out 0.3s;
 }
 
 .facts .count-box a:hover {
-  color: #1f5297;
+  color: #ac6100;
 }
 
 /*--------------------------------------------------------------
@@ -474,7 +474,7 @@ section {
   width: 1px;
   height: 10px;
   transition: 0.9s;
-  background-color: #149ddd;
+  background-color: #ac6100;
 }
 
 /*--------------------------------------------------------------
@@ -498,7 +498,7 @@ section {
 .resume .resume-item {
   padding: 0 0 20px 20px;
   margin-top: -2px;
-  border-left: 2px solid #1f5297;
+  border-left: 2px solid #ac6100;
   position: relative;
 }
 
@@ -514,7 +514,7 @@ section {
 
 .resume .resume-item h5 {
   font-size: 16px;
-  background: #e4edf9;
+  background: #ac6100;
   padding: 5px 15px;
   display: inline-block;
   font-weight: 600;
@@ -542,7 +542,7 @@ section {
   left: -9px;
   top: 0;
   background: #fff;
-  border: 2px solid #1f5297;
+  border: 2px solid #ac6100;
 }
 
 .scene {
@@ -575,7 +575,7 @@ section {
 
 .btn {
   border: 2px solid black;
-  background-color: #149ddd;
+  background-color: black;
   border-radius: 20px;
   color: white;
 }
@@ -743,11 +743,11 @@ section {
   height: 12px;
   background-color: #fff;
   opacity: 1;
-  border: 1px solid #149ddd;
+  border: 1px solid #ac6100;
 }
 
 .portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #149ddd;
+  background-color: #ac6100;
 }
 
 .portfolio-details .portfolio-info {
@@ -801,10 +801,10 @@ section {
   justify-content: center;
   width: 54px;
   height: 54px;
-  background: #149ddd;
+  background: #ac6100;
   border-radius: 50%;
   transition: 0.5s;
-  border: 1px solid #149ddd;
+  border: 1px solid #ac6100;
 }
 
 .services .icon i {
@@ -833,7 +833,7 @@ section {
 }
 
 .services .title a:hover {
-  color: #149ddd;
+  color: #ac6100;
 }
 
 .services .description {
@@ -927,11 +927,11 @@ section {
   height: 12px;
   background-color: #fff;
   opacity: 1;
-  border: 1px solid #149ddd;
+  border: 1px solid #ac6100;
 }
 
 .testimonials .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #149ddd;
+  background-color: #ac6100;
 }
 
 /*--------------------------------------------------------------
@@ -950,7 +950,7 @@ section {
 
 .contact .info i {
   font-size: 20px;
-  color: #149ddd;
+  color: #ac6100;
   float: left;
   width: 44px;
   height: 44px;
@@ -974,7 +974,7 @@ section {
   padding: 0 0 10px 60px;
   margin-bottom: 20px;
   font-size: 14px;
-  color: #173b6c;
+  color: #ac6100;
 }
 
 .contact .info .email p {
@@ -1001,7 +1001,7 @@ section {
 }
 
 .contact .info .social-links a:hover {
-  background: #149ddd;
+  background: #ac6100;
   color: #fff;
 }
 
@@ -1096,7 +1096,7 @@ section {
 }
 
 .contact .php-email-form button[type=submit] {
-  background: #149ddd;
+  background: #ac6100;
   border: 0;
   padding: 10px 24px;
   color: #fff;
@@ -1105,7 +1105,7 @@ section {
 }
 
 .contact .php-email-form button[type=submit]:hover {
-  background: #37b3ed;
+  background: #ac6100;
 }
 
 @keyframes animate-loading {
@@ -1147,7 +1147,7 @@ section {
 .breadcrumbs ol li+li::before {
   display: inline-block;
   padding-right: 10px;
-  color: #0e2442;
+  color: #ac6100;
   content: "/";
 }
 
@@ -1177,7 +1177,7 @@ section {
   bottom: 0;
   width: 300px;
   z-index: 9999;
-  background: #040b14;
+  background: #ac6100;
 }
 
 #footer .copyright {
