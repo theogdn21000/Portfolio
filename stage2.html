@@ -40,8 +40,9 @@
         <a href="index.html" class="btn">Retour</a> <br> <br>
         <h2>Migration et refonte d'un site web : </h2>
 
-        <p class="text-muted mb-0">Lors de ce stage, j'ai du récupérer le code qui avait été fait sous symfony 3 et éffectué une migration vers symfony 7.
-            Le code avait été  sauvegarder dans une machine virtuel avec des dockers. 
+        <p class="text-muted mb-0">Lors de ce stage, j'ai du récupérer le code qui avait été fait sous symfony 3 et
+            éffectué une migration vers symfony 7.
+            Le code avait été sauvegarder dans une machine virtuel avec des dockers.
         </p>
         <br>
         <p class="text-muted mb-0">L'application a été développé avec symfony 3 qui n'est plus d'actualité
@@ -50,29 +51,92 @@
             doctrine, pour comprendre comment fonctionne symfony. Notre plus gros problème est la gestion
             du pare-feu qui bloque tous les téléchargement, l'installation de symfony etc.
             Ensuite j'ai mise en place de la base de donnée et configuration d'un tunnel SSH pour voir les dockers et le
-            contenu sauvegardé du projet cartes vertes qui est le projet sur lequel je dois faire la migrations vers symfony 7.
-            Le code que nous allons réutiliser et modifier est sauvegardée dans la base de donnée, 
+            contenu sauvegardé du projet cartes vertes qui est le projet sur lequel je dois faire la migrations vers
+            symfony 7.
+            Le code que nous allons réutiliser et modifier est sauvegardée dans la base de donnée,
             dans des conteneurs (docker) ce qui permet de sécuriser le codes en cas de problème de l'application.
-            J'ai donc compris comment fonctionnait un conteneur et comment le code et réparti dans les différent conteneur ce qui m'a permit d'effectué une migrations plus faciles 
+            J'ai donc compris comment fonctionnait un conteneur et comment le code et réparti dans les différent
+            conteneur ce qui m'a permit d'effectué une migrations plus faciles
             car je savais a quoi correspondait les elément de symfony 3 dans le 7.
-            J'ai en amont, créé un petite page pour comprendre comment afficher des données, comment modifier,agencer une page en symfony.
+            J'ai en amont, créé un petite page pour comprendre comment afficher des données, comment modifier,agencer
+            une page en symfony.
         </p>
         <br>
-        <p class="text-muted mb-0"> Une fois lancé j'ai donc appris a faire des routes pour lier les différentes pages de l'application entre elle, j'ai ensuite fait des formulaires avec les informations de la base de données. 
-            Et pour finir n'ayant pas le temps de tous faire, j'ai fait une documentation pour permettre a chef de l'association de continuer le projet pour un futur développeur venant en stage.</p>
+        <p class="text-muted mb-0"> Une fois lancé j'ai donc appris a faire des routes pour lier les différentes pages
+            de l'application entre elle, j'ai ensuite fait des formulaires avec les informations de la base de données.
+            Et pour finir n'ayant pas le temps de tous faire, j'ai fait une documentation pour permettre a chef de
+            l'association de continuer le projet pour un futur développeur venant en stage.</p>
 
 
         <br>
         <!-- Nav tabs -->
-    <ul class="nav nav-tabs" role="tablist">
-        <li class="nav-item">
-            <a class="nav-link active" data-bs-toggle="tab" href="#panelwp">Création du blog avec WordPress</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" data-bs-toggle="tab" href="#main-content">Contenu principal</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" data-bs-toggle="tab" href="#contact">Contact</a>
-        </li>
-    </ul>
+        <ul class="nav nav-tabs" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active" data-bs-toggle="tab" href="#symfony">Apprentissage symfony</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#Maquette">Maquettage</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#Dev">Developpement application</a>
+            </li>
+        </ul>
+
+        <div class="tab-content">
+            <div id="symfony" class="container tab-pane active">
+                <p>
+                    <br>Voici a quoi ressemble la page d'acceuil à l'installation de symfony
+                </p>
+                <img src="./assets/img/serreVivante/7.png" width="500px" height="auto" >
+                <p>
+                    <br>Première expériences du code et création de cette page simple avec un lien entre les pages
+                    editeur et Import/export.
+                </p>
+                <img src="./assets/img/serreVivante/1.png" width="500px" height="auto" >
+                <p>
+                    <br>Apprentissage des requete DQL (doctrine query language) qui est le language spécifique pour crée
+                    des requete sql dans symfony.
+                </p>
+                <br>
+                <img src="./assets/img/serreVivante/5.png" width="500px" height="auto" >
+            </div>
+
+            
+
+            <!-- partie 3  -->
+            <div id="Maquette" class="container tab-pane fade"><br>
+                <p>
+                    Voici comment nous avons imaginer l'application lors du développement de l'application
+                </p>
+                <img src="./assets/img/serreVivante/8.png" width="500px" height="auto" >
+                <img src="./assets/img/serreVivante/9.png" width="500px" height="auto" >
+                <img src="./assets/img/serreVivante/10.png" width="500px" height="auto" >
+                <img src="./assets/img/serreVivante/11.png" width="500px" height="auto" >
+                <img src="./assets/img/serreVivante/12.png" width="500px" height="auto" >
+                <img src="./assets/img/serreVivante/13.png" width="500px" height="auto" >
+                <br>
+                <br>
+            </div>
+
+            <div id="Dev" class="container tab-pane fade">
+                <p>
+                    Sur cette image, nous voyons l'amelioration de l'image numéro 1
+                </p>
+                <img src="./assets/img/serreVivante/3.png" width="500px" height="auto" >
+                <br>
+                <br>
+                <p>
+                    Création du formulaire ou le super-admin peut gérer le rôle de chaque.
+                    <br>La zone en noir est un dump de mon objet Editeur
+                </p>
+                <img src="./assets/img/serreVivante/2.png" width="500px" height="auto" >
+                <br>
+                <br>
+                <p>
+                    Amélioration du formulaire de la photo ci dessus pour avoir un rendu plus propre et plus professionnelle.
+                </p>
+                <img src="./assets/img/serreVivante/4.png" width="500px" height="auto" >
+            </div>
+
+        </div>
 </body>
