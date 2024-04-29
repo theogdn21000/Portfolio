@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Lien bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>SDIS29</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: auto;
+            padding: 1em;
+        }
+
+        h2 {
+            color: #ac6100;
+        }
+
+        .nav-tabs .nav-link {
+            color: #495057;
+        }
+
+        .nav-tabs .nav-link.active {
+            color: #ac6100;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container mt-3">
+        <a href="index.html" class="btn">Retour</a> <br> <br>
+
+        <h2>SDIS29 et ses besoins informatiques pour gérer les pompiers volontaires</h2>
+        <p>
+            Contexte : le SDIS 29 du Finistère entreprend une modernisation de ses outils informatiques et souhaite
+            améliorer sa gestion des pompiers volontaires grâce à une nouvelle application intranet.
+        </p>
+        <h3>Contraintes</h3>
+        <ul>
+            <li>Utilisation de l'application dans un navigateur, développer l'application en Php</li>
+        </ul>
+        <h3>Réalisations</h3>
+        <ul>
+            <li>Maquettes, arborescence du site et diagramme de cas d'utilisation</li>
+            <li>Modèle relationnel</li>
+            <li>Développement de l'application en MVC</li>
+            <li>Mode opératoire pour les utilisateurs</li>
+        </ul>
+        <h3>Fonctionnalités</h3>
+        <ul>
+            <li>Système de connexion sécurisé, accès et modification du profil par le chef de garde ou le pompier
+                lui-même</li>
+            <li>Ajout des disponibilités par les pompiers volontaires, ajout des gardes par le chef de centre</li>
+            <li>Créer des interventions</li>
+        </ul>
+        <p>
+            Outils et logiciels utilisés : HTML, CSS, PHP, Sql,Mysql, JS
+        </p>
+
+        <p>Compétences travaillées :
+            <li>mettre à disposition des utilisateurs un service informatique</li>
+            <li>travailler en mode projet</li>
+        </p>
+
+        <br><br>
+
+        <!-- Nav tabs -->
+        <ul class="nav nav-tabs" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active" data-bs-toggle="tab" href="#PageAuth">Page Authentification</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#saisiDispo">Saisies des disponibilités</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#GestGardes">Gestions des gardes</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#MobInter">Mobilisation d'une équipe pour une
+                    interventions</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#ProfilAide">Menu profil et aide</a>
+            </li>
+        </ul>
+
+        <!-- Tab panes -->
+        <div class="tab-content">
+
+            <!--------------------- Connexion Tab ---------------------------->
+            <div id="PageAuth" class="container tab-pane active"><br>
+                <img src="./assets/img/sdis29/connexion.png" width="350px">
+                <p>
+                    Depuis l'onglet “Mes gardes” vous pouvez voir vos gardes pour la semaine actuelle et les semaines à
+                    venir
+                </p>
+                <br><br>
+                <img src="./assets/img/sdis29/mdp.png" width="350px">
+                <p>
+                    Entrez votre mot de passe pour recevoir un mail de réinitialisation
+                    <br>
+                    <br>Si vous vous souvenez de votre mot de passe, cliquez sur "Connectez vous"
+                </p>
+            </div>
+
+            <!------------------Saisie des disponibilités--------------------->
+            <div id="saisiDispo" class="container tab-pane fade"><br>
+                <img src="./assets/img/sdis29/dispo.png" width="500px">
+                <p style="text-align: justify;">
+                    Via le menu d'accueil, dans l'onglet “Mes disponibilités”, vous avez accès à
+                    vos disponibilités de toutes les semaines.<br>
+                    De base c'est la semaine suivante qui est affichée en premier (pour choisir ses disponibilités
+                    futures)<br><br>
+                    Vous pouvez changer d'état de la tranche d'heure en cliquant dessus.<br>
+                    Chaque couleur correspond à un état de disponibilité (vert = disponible, orange = au travail, rouge
+                    = indisponible)
+                </p>
+
+            </div>
+
+            <!------------------Gestion des gardes--------------------->
+            <div id="GestGardes" class="container tab-pane fade"><br>
+                <img src="./assets/img/sdis29/gardes.png" width="500px">
+                <p>
+                    Depuis l'onglet “Mes gardes” vous pouvez voir vos gardes pour la semaine actuelle et les semaines à
+                    venir
+                </p>
+                <br><br>
+                <img src="./assets/img/sdis29/gardesChef.png" width="500px">
+                <p>
+                    Attribution des gardes des pompiers, au clique cela coche ou décoche la case.
+                    <br>
+                    <br>Si la case est cochée, alors le pompier sera de garde à la tranche d'heure sélectionnée
+                </p>
+            </div>
+
+            <!------------------Mobilisation d'une équipe pour une intervention--------------------->
+            <div id="MobInter" class="container tab-pane fade"><br>
+                <img src="./assets/img/sdis29/creationIntervention.png" width="500px">
+                <p>
+                    Création d'une intervention en sélectionnant la caserne la plus proche, en renseignant le lieu, le
+                    type d'intervention et sa description.
+                    <br>
+                    <br>Des informations sur le type d'intervention sélectionné est affiché.
+                    <br>Liste des pompiers disponible ou au travail qui peuvent être mit en intervention
+                </p>
+                <br><br>
+                <img src="./assets/img/sdis29/listeInterventions.png" width="500px">
+                <p>
+                    Liste des interventions, avec la possibilité de mettre fin à l'intervention à tout moment
+                </p>
+            </div>
+
+            <!-- Vue Garde Tab -->
+            <div id="ProfilAide" class="container tab-pane fade"><br>
+                <img src="./assets/img/sdis29/mdp.png" width="350px">
+                <p>
+                    Depuis l'onglet “Mon profil”, vous avez accès à vos informations personnelles.
+                    Les informations peuvent être modifiées en cliquant sur ce bouton : <img style="width: 40px;"
+                        src="./assets/img/sdis29/modif.png" width="350px">
+                </p>
+                <br><br>
+                <img src="./assets/img/sdis29/aide.png" width="350px">
+                <p><br><br>
+                    Accessible via le bouton “aide”
+                    <br><br>
+                    Permet d'accéder au mode opératoire du site internet, et à un numéro d'aide, ainsi qu'un email
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

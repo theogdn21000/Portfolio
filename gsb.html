@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Lien bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>GSB</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: auto;
+            padding: 1em;
+        }
+
+        h2 {
+            color: #ac6100;
+        }
+
+        .nav-tabs .nav-link {
+            color: #495057;
+        }
+
+        .nav-tabs .nav-link.active {
+            color: #ac6100;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container mt-3">
+        <a href="index.html" class="btn">Retour</a> <br> <br>
+
+        <h3>Contexte: </h3>
+        <p>
+            GSB est un laboratoire pharmaceutique qui développe des médicaments. Après le développement d'un médicament,
+            des visiteurs sont envoyés vers des praticiens afin de les présenter ces médicaments.
+        </p>
+        <br><br>
+
+        <ul class="nav nav-tabs" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active" data-bs-toggle="tab" href="#partie1">Partie 1</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#partie2">Partie 2</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#partie3">Partie 3</a>
+            </li>
+
+        </ul>
+
+        <!-- Tab panes -->
+        <div class="tab-content">
+            <!-- Partie 1 -->
+            <div id="partie1" class="container tab-pane active"><br>
+                <h4>Partie 1 :</h4>
+
+                <p>
+                    Pour cette 1ère partie du projet GSB, le laboratoire désirais mettre à disposition des visiteurs
+                    médicaux une application développée en C# leur permettant de
+                    présenter les médicaments de GSB aux médecins et autres praticiens de manière attractive.
+
+                <h4>Réalisations :</h4>
+                <ul>
+                    <li>Maquette du site</li>
+                    <li>Création et installation d'une base de donnée</li>
+                    <li>Développement de l'application </li>
+                </ul>
+
+                <h4>Fonctionalités de l'application</h4>
+                <ul>
+                    <li>Authentification</li>
+                    <li>Affichage de la liste des médicaments par famille</li>
+                    <li>La visualisation des Inforomations sur le médicament</li>
+                    <li>Ajout d'une remarque concernant le médicament</li>
+                </ul>
+
+                <p>
+                    Outils et logiciels utilisés : C#, Sql, Mysql, git
+                </p>
+
+                <p>Compétences travaillées :
+                    <li>mettre à disposition des utilisateurs un service informatique</li>
+                    <li>travailler en mode projet</li>
+                </p>
+
+
+                <ul class="nav nav-tabs" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" data-bs-toggle="tab" href="#connexion">Page de connexion </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="tab" href="#infoMedoc">Selection et informations d'un
+                            médicament</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="tab" href="#remarque">Ajout d'une remarque</a>
+                    </li>
+                </ul>
+
+                <!-- Tab panes -->
+                <!-- partie 1 -->
+                <div class="tab-content">
+                    <div id="connexion" class="container tab-pane active">
+                        <p>
+                            <br>Au clique sur l'oeil cela met le mot de passe en clair
+                            <br>Si vous avez oublié votre mot de passe, cliquez sur "mot de passe oublié ?"
+                        </p>
+                        <br>
+                        <img src="./assets/img/gsb/partie1/1.png" width="350px" height="auto" alt="gsb1-connexion">
+                    </div>
+
+                    <!-- partie 2  -->
+                    <div id="infoMedoc" class="container tab-pane fade">
+                        <p>
+                            Liste des Groupes de médicament, en fonction du groupe choisi, la liste des
+                            familles de
+                            médicaments
+                            change.
+                            <br>Au clique sur une famille une nouvelle page apparaît
+                            <br>Vous pouvez sélectionner un médicament directement via la barre de recherche
+                        </p>
+                        <img src="./assets/img/gsb/partie1/3.1.png" width="350px" height="auto" alt="gsb1-infoMedoc">
+                        <br>
+                        <p>
+                            Liste des médicaments en fonction de la famille choisi
+                            <br>Cliquez sur la ligne pour choisir un médicament
+                        </p>
+                        <img src="./assets/img/gsb/partie1/3.png" width="350px" height="auto" alt="gsb1-infoMedoc">
+                        <p>
+                            Informations sur le médicament choisi
+                            <br>Avec les remarques fait par les différents praticiens
+                            <br>Cliquez sur le bouton "Ajouter Remarque" pour ajouter une remarque
+                        </p>
+                        <img src="./assets/img/gsb/partie1/4.png" width="350px" height="auto" alt="gsb1-infoMedoc">
+                    </div>
+
+
+                    <!-- partie 3  -->
+                    <div id="remarque" class="container tab-pane fade"><br>
+                        <img src="./assets/img/gsb/partie1/5.png" width="350px" height="auto" alt="gsb1-remarque">
+                        <p>
+                            Liste pour sélectionner le praticien
+                            <br>Zone de texte pour écrire la remarque
+                            <br>Bouton pour réinitialiser tous les champs
+                        </p>
+                        <br>
+                        <br>
+                        <img src="./assets/img/gsb/partie1/6.png" width="250px" height="auto" alt="gsb1-remarque">
+                        <p>
+                            Quand la remarque a été ajoutée, un message apparaît
+                        </p>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <!-- Partie 2 -->
+            <div id="partie2" class="container tab-pane fade"><br>
+                <h4>Partie 2 :</h4>
+                <p>
+                    Pour cette 2ème partie du projet GSB, une application web a été développer afin d'enregistrer et
+                    suivre les comptes
+                    rendus des visites rendu auprès des paraticiens.
+                </p>
+
+                <h4>Réalisations :</h4>
+                <ul>
+                    <li>Maquette du site et diagramme de cas d'utilisation</li>
+                    <li>Installation d'une base de donnée</li>
+                    <li>Développement du site</li>
+                </ul>
+
+                <h4>Fonctionalités de l'application</h4>
+                <ul>
+                    <li>Authentification sécurisée</li>
+                    <li>La création d'un compte rendu</li>
+                    <li>La visualisation d'une liste des comptes rendu</li>
+                    <li>Modification d'un compte rendu</li>
+                </ul>
+
+                <p>
+                    Outils et logiciels utilisés : HTML, CSS, PHP, Sql,Mysql, JS
+                </p>
+
+                <p>Compétences travaillées :
+                    <li>mettre à disposition des utilisateurs un service informatique</li>
+                    <li>travailler en mode projet</li>
+                </p>
+
+
+                <ul class="nav nav-tabs" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" data-bs-toggle="tab" href="#authentification1">Page
+                            d'authentification</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="tab" href="#ajoutCompteRendu">Ajout d'un compte-rendu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="tab" href="#GestionCompteRendu">Gestion d'un
+                            compte-rendu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="tab" href="#Aide">Menu profil et aidee</a>
+                    </li>
+                </ul>
+
+                <!-- Sous-onglets de la Partie 1 -->
+                <div class="tab-content">
+                    <div id="authentification1" class="container tab-pane active">
+                        <img src="./assets/img/gsb/partie2/1.png" width="300px">
+                        <p>
+                            Page d'authentification, au clique sur l'oeil cela met le mot de passe en
+                            clair
+                            <br><br>Si vous avez oublié votre mot de passe, cliquez sur "mot de passe oublié ?"
+                        </p>
+                        <img src="./assets/img/gsb/partie2/2.png" width="300px">
+                        <p>
+                            Entrez votre mot de passe pour recevoir un mail de réinitialisation<br>
+                            Si vous vous souvenez de votre mot de passe, cliquez sur "Connectez vous "
+                        </p>
+                    </div>
+
+                    <div id="ajoutCompteRendu" class="container tab-pane fade">
+                        <img src="./assets/img/gsb/partie2/7.png" width="800px">
+                        <p>
+                            Liste des comptes-rendus réalisés par le visiteur
+                            <br>Pour ajouter un compte rendu cliquez sur "Ajouter un compte-rendu"
+                        </p>
+                        <img src="./assets/img/gsb/partie2/9.png" width="800px">
+                        <p>
+                            Renseignez les champs voulu
+                            <br>Puis cliquez sur valider pour finaliser la création
+                        </p>
+                        <img src="./assets/img/gsb/partie2/10.png" width="800px">
+                        <p>
+                            Un message sera affiché pour vous notifier de la bonne création du compte-rendu
+                        </p>
+                    </div>
+
+                    <div id="GestionCompteRendu" class="container tab-pane fade">
+                        <img src="./assets/img/gsb/partie2/oeil.png" width="100px">
+                        <p>
+                            Detail ou modification d'un compte-rendu
+                        </p>
+                        <img src="./assets/img/gsb/partie2/11.png" width="800px">
+                        <p>
+                            Detail d'un compte-rendu, avec des boutons de modification, suppression et de retour
+                        </p>
+                        <img src="./assets/img/gsb/partie2/12.png" width="800px">
+                        <p>
+                            Bouton de confirmation de suppression du compte-rendu
+                        </p>
+                        <img src="./assets/img/gsb/partie2/13.png" width="800px">
+                        <p>
+                            Modification d'un compte-rendu, avec des boutons pour enregistrer, supprimer et retour
+                        </p>
+                    </div>
+
+                    <div id="Aide" class="container tab-pane fade">
+                        <img src="./assets/img/gsb/partie2/3.png" width="800px">
+                        <p>
+                            Affichage d'option pour le profil et l'aide
+                        </p>
+                        <img src="./assets/img/gsb/partie2/4.png" width="800px">
+                        <p>
+                            Affichage du profil et des statistiques du visiteur
+                        </p>
+                        <img src="./assets/img/gsb/partie2/5.png" width="800px">
+                        <p>
+                            Page d'aide, avec un numéro et un mail, et un lien vers un mode d'emploi
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+
+
+
+            <!-- Partie 3 -->
+            <div id="partie3" class="container tab-pane fade"><br>
+                <h4>Partie 3 :</h4>
+                <p>
+                    Pour cette 3ème partie GSB, une application "AppliFrais" a été développé. Cette application devrait
+                    permettre ce
+                    fois-ci aux visiteurs de renseigner
+                    tous les frais de leurs déplacement auprès des visiteur.Parmis ces frais nous avaons des frais
+                    forfaitaires(définis
+                    par l'entreprise) et les frais hors forfait qui doivent etre justifiés.
+                    L'application développé est accessible pour deux catégories de salariés : les comptables et les
+                    visiteurs.
+                </p>
+
+                <h4>Réalisations :</h4>
+                <ul>
+                    <li>Maquette du site et diagramme de cas d'utilisation</li>
+                    <li>Model relationnel </li>
+                    <li>Développement du site</li>
+                </ul>
+
+                <h4>Fonctionalités de l'application</h4>
+                <ul>
+                    <li>Authentification sécurisée</li>
+                    <li>La création automatique d'une demande de remboursement</li>
+                    <li>modification d'une demande de remboursement par le visiteur et le comptable(frais forfaitaires)
+                    </li>
+                    <li>Validation de la demande par le comptable</li>
+                    <li>Cloture automatique d'une demande dès qu'on passe au mois suivant</li>
+                </ul>
+
+                <p>
+                    Outils et logiciels utilisés : HTML, CSS, PHP, Sql,Posgresql, JS, dépôt Git
+                </p>
+
+                <p>Compétences travaillées :
+                    <li>mettre à disposition des utilisateurs un service informatique</li>
+                    <li>travailler en mode projet</li>
+                </p>
+
+
+                <ul class="nav nav-tabs" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" data-bs-toggle="tab" href="#visiteur">Partie visiteur</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="tab" href="#comptable">Partie comptable</a>
+                    </li>
+                </ul>
+
+                <!-- Contenu des onglets -->
+                <div class="tab-content">
+                    <!-- Contenu de la partie visiteur -->
+                    <div id="visiteur" class="container tab-pane active">
+                        <ul class="nav nav-tabs" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" data-bs-toggle="tab" href="#authV">Authentification</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-bs-toggle="tab" href="#gestionFrais">Gestion de mes fiches </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-bs-toggle="tab" href="#Envoie">Envoie de la fiche </a>
+                            </li>
+                        </ul>
+
+                        <!-- Contenu des sous-onglets de la partie visiteur -->
+                        <div class="tab-content">
+                            <div id="authV" class="container tab-pane active">
+                                <img src="./assets/img/gsb/partie3/1.png" width="800px" >
+                                <br>
+                                <p>
+                                    Menu d'acceuil avec toutes les informations de l'utilisateur connecté
+                                </p>
+                                <img src="./assets/img/gsb/partie3/2.png"  width="800px">
+                            </div>
+
+                            <div id="gestionFrais" class="container tab-pane">
+                                <p>
+                                    Vu sur toutes les fiches de frais de l'utilisateur connecté
+                                </p>
+                                <img src="./assets/img/gsb/partie3/3.png"  width="800px">
+                            </div>
+                            <div id="Envoie" class="container tab-pane">
+                                <p>
+                                    Au clic du bouton voir de la photo "Gestion de mes fiches" l'utilisateur fait ça demande en complétant cette 
+                                    fiches de remboursement puis clic sur le bouton envoyer, ce sera au comptable de valider cette fiche ou non
+                                </p>
+                                <img src="./assets/img/gsb/partie3/4.png"  width="800px">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contenu de la partie comptable -->
+                    <div id="comptable" class="container tab-pane">
+                        <ul class="nav nav-tabs" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" data-bs-toggle="tab" href="#authC">Authentification</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-bs-toggle="tab" href="#gestionFiches">Liste des demandes des 12 derniers mois pour chaque visiteurs</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-bs-toggle="tab" href="#validFiche">Liste de toutes les fiches a valider du mois précédent</a>
+                            </li>
+                        </ul>
+
+                        <!-- Contenu des sous-onglets de la partie comptable -->
+                        <div class="tab-content">
+                            <div id="authC" class="container tab-pane active">
+                                <img src="./assets/img/gsb/partie3/1.png" width="800px">
+                                <p>
+                                    Menu d'acceuil avec toutes les informations de l'utilisateur connecté
+                                </p>
+                                <img src="./assets/img/gsb/partie3/8.png" width="800px">
+                            </div>
+                            <div id="gestionFiches" class="container tab-pane">
+                                <img src="./assets/img/gsb/partie3/5.png" alt="" width="800px">
+                            </div>
+                            <div id="validFiche" class="container tab-pane">
+
+                                <img src="./assets/img/gsb/partie3/6.png" alt="" width="800px">
+                                <br>
+                                <p>
+                                    Le comptable peut choisir d'accepter ou non le frais hors forfait, 
+                                    si il est en rouge cela veut dire que c'est refuser. Une fois ceci fais il doit valider la fiches
+                                </p>
+                                <img src="./assets/img/gsb/partie3/7.png" alt="" width="800px">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
